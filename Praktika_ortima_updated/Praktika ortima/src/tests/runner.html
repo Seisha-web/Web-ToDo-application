@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tests</title>
+    <style>
+      body {
+        font-family: system-ui, Arial, sans-serif;
+        padding: 16px;
+      }
+      pre {
+        background: #111;
+        color: #ddd;
+        padding: 12px;
+        border-radius: 8px;
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Task Manager Pro — Tests</h3>
+    <pre id="out">Loading tests...</pre>
+
+    <!-- dayjs нужен, потому что utils.js использует dayjs() -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+
+    <!-- ВАЖНО: module + правильный путь (файл лежит рядом с runner.html) -->
+    <script type="module" src="./runTests.js"></script>
+  </body>
+</html>
